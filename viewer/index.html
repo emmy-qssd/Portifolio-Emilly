@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Emilly — Web Developer & Designer"
+    />
+    <title>Emilly · Web Desenvolvedora / Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="icon" href="/img/luapfp.png.png" />
+  </head>
+  <body>
+    <canvas id="particleCanvas"></canvas>
+
+    <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
+    <header class="navbar">
+      <a href="#" class="logo" aria-label="Início">
+        <span class="logo-bracket">&lt;</span>emilly<span class="logo-slash"
+          >/</span
+        ><span class="logo-bracket">&gt;</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li>
+            <a href="#sobre"><span class="nav-index">01.</span> Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades"
+              ><span class="nav-index">02.</span> Habilidades</a
+            >
+          </li>
+          <li>
+            <a href="#projetos"><span class="nav-index">03.</span> Projetos</a>
+          </li>
+          <li>
+            <a href="#contato"><span class="nav-index">04.</span> Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner">
+          <div class="hero-copy">
+          <p class="hero-greeting">print("Olá, mundo")</p>
+          <h1>
+            <span class="hero-name">Emilly  <span class="hero-role"
+              >Web Developer<span class="slash">/</span>Designer</span
+            ></span>
+           
+          </h1>
+          <p class="hero-sub">
+            Construindo experiências digitais limpas, funcionais e um pouquinho
+            fora do óbvio.
+          </p>
+          <div class="hero-cta">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Falar comigo →</a>
+          </div>
+          <div class="hero-terminal" aria-hidden="true">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <p> / emilly — portf.</p>
+            </div>
+            <pre class="terminal-body">
+<span class="tl-c">const</span> <span class="tl-v">dev</span> = {
+  <span class="tl-k">nome</span>: <span class="tl-s">'Emilly'</span>,
+  <span class="tl-k">hab</span>: [<span class="tl-s">'HTML'</span>, <span class="tl-s">'CSS'</span>, <span class="tl-s">'JS'</span>, <span class="tl-s">'Python'</span>],
+  <span class="tl-k">status</span>: <span class="tl-s">'aberta a projetos'</span> <span class="cursor">▍</span>
+};</pre>
+          </div>
+          </div>
+          <aside class="hero-profile" aria-label="Foto de perfil de Emilly">
+            <div class="profile-frame">
+              <img src="/img/perfil.png" alt="Foto de perfil de Emilly" />
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre">
+        <header class="section-head">
+          <span class="section-num">01.</span>
+          <h2>Sobre mim</h2>
+          <span class="section-line"></span>
+        </header>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Olá! Meu nome é <strong>Emilly</strong> e sou uma desenvolvedora
+              web e designer apaixonada por criar experiências digitais
+              incríveis.
+            </p>
+            <p>
+              Tenho experiência em <em>HTML, CSS, JavaScript e Python</em>.
+              Adoro aprender novas tecnologias e estou sempre em busca de
+              desafios que me permitam crescer profissionalmente.
+            </p>
+            <p>
+              Meu foco é unir <span class="hl">código limpo</span> com
+              <span class="hl">design cuidadoso</span> — porque interface bonita
+              sem estrutura não vive, e estrutura sem interface não emociona.
+            </p>
+          </div>
+          <aside class="about-card" aria-label="Resumo rápido">
+            <ul>
+              <li><span>local</span><b>Brasil 🇧🇷</b></li>
+              <li><span>foco</span><b>Front-end & UI</b></li>
+              <li><span>status</span><b class="status-dot">Disponível</b></li>
+              <li><span>café</span><b>∞</b></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section habilidades" id="habilidades">
+        <header class="section-head">
+          <span class="section-num">02.</span>
+          <h2>Habilidades</h2>
+          <span class="section-line"></span>
+        </header>
+        <ul class="habilidades-grid">
+          <li><b>HTML5</b><span>Semântico & acessível</span></li>
+          <li><b>CSS3</b><span>Flex, Grid, animações</span></li>
+          <li><b>JavaScript</b><span>ES6+, DOM, fetch</span></li>
+          <li><b>Python</b><span>Automação & back-end</span></li>
+          <li><b>MVC</b><span>Arquitetura de apps</span></li>
+          <li><b>Alembic</b><span>Migrations de banco</span></li>
+          <li><b>Git</b><span>Versionamento</span></li>
+          <li><b>Figma</b><span>UI / prototipagem</span></li>
+        </ul>
+      </section>
+
+      <section class="section projects" id="projetos">
+        <header class="section-head">
+          <span class="section-num">03.</span>
+          <h2>Projetos</h2>
+          <span class="section-line"></span>
+        </header>
+        <ul class="projects-list">
+          <li class="project-card">
+            <div class="project-index">01</div>
+            <div class="project-body">
+              <h3>Ponto de Venda Responsivo</h3>
+              <p>
+                Sistema PDV web totalmente responsivo, construído com
+                arquitetura MVC e migrations gerenciadas por Alembic para a AAPM da Escola Senai Francisco Matarazzo.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>MVC</span><span>Alembic</span
+                ><span>Responsive</span>
+              </div>
+              <div class="project-gallery" data-gallery>
+                <div class="gallery-stage">
+                  <button class="gallery-control gallery-prev" type="button" aria-label="Foto anterior">
+                    <span aria-hidden="true">&lt;</span>
+                  </button>
+                  <button class="gallery-main" type="button" aria-label="Ampliar imagem do projeto">
+                    <img src="/img/pontovenda.png" alt="Tela do ponto de venda responsivo" />
+                  </button>
+                  <button class="gallery-control gallery-next" type="button" aria-label="Próxima foto">
+                    <span aria-hidden="true">&gt;</span>
+                  </button>
+                </div>
+                <div class="gallery-info">
+                  <p class="gallery-caption">Tela principal do PDV</p>
+                  <p class="gallery-count" aria-live="polite">1 / 4</p>
+                </div>
+                <div class="gallery-thumbs" aria-label="Fotos do projeto Ponto de Venda Responsivo">
+                  <button class="gallery-thumb is-active" type="button" aria-label="Ver tela principal do PDV">
+                    <img src="/img/pontovenda.png" alt="Tela principal do PDV" data-caption="Tela principal do PDV" />
+                  </button>
+                  <button class="gallery-thumb" type="button" aria-label="Ver dashboard no tema escuro">
+                    <img src="/img/dashboarddark.png" alt="Dashboard do PDV em tema escuro" data-caption="Dashboard no tema escuro" />
+                  </button>
+                  <button class="gallery-thumb" type="button" aria-label="Ver dashboard no tema claro">
+                    <img src="/img/dashboardlight.png" alt="Dashboard do PDV em tema claro" data-caption="Dashboard no tema claro" />
+                  </button>
+                  <button class="gallery-thumb" type="button" aria-label="Ver página de login">
+                    <img src="/img/login.png" alt="Página de login do sistema" data-caption="Página de login" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-index">02</div>
+            <div class="project-body">
+              <h3>Plataforma de Download de Jogos</h3>
+              <p>
+                Aplicação web para catalogar e disponibilizar downloads de
+                jogos, utilizando modelo MVC e Alembic para versionamento do
+                banco.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>MVC</span><span>Alembic</span
+                ><span>SQL</span>
+              </div>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-index">03</div>
+            <div class="project-body">
+              <h3>Portfólio Pessoal</h3>
+              <p>
+                Este site! Um portfólio construído com HTML, CSS e JavaScript
+                puros — leve, rápido e com estética de terminal.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section contact" id="contato">
+        <header class="section-head">
+          <span class="section-num">04.</span>
+          <h2>Contato</h2>
+          <span class="section-line"></span>
+        </header>
+        <div class="contact-inner">
+          <p class="contact-lead">Vamos criar algo juntos?</p>
+          <p class="contact-text">
+            Se você deseja entrar em contato comigo, sinta-se à vontade para
+            enviar um e-mail. Também estou por aqui:
+          </p>
+          <a class="contact-mail" href="https://workspace.google.com/intl/pt-BR/gmail/"
+            >emillyqssd.dev@gmail.com</a
+          >
+          <ul class="socials" aria-label="Redes sociais">
+            <li>
+              <a href="https://github.com/emmy-qssd" target="_blank" rel="noopener"
+                >GitHub ↗</a
+              >
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/emilly-quessada" target="_blank" rel="noopener"
+                >LinkedIn ↗</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Feito por Emilly · ©
+        <span id="year"></span>
+      </p>
+    </footer>
+
+    <div class="gallery-lightbox" aria-hidden="true" role="dialog" aria-label="Imagem ampliada do projeto">
+      <button class="lightbox-close" type="button" aria-label="Fechar visualização">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagem anterior">&lt;</button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Próxima imagem">&gt;</button>
+    </div>
+
+    <script src="/interaction/index.js">
+    </script>
+  </body>
+</html>
