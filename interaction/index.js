@@ -144,34 +144,59 @@ window.addEventListener('resize', resizeCanvas);
 const particlesArray = [];
 
 function getParticleCount() {
-    if (window.innerWidth <= 480) return 42;
-    if (window.innerWidth <= 820) return 64;
-    return 100;
+    if (window.innerWidth <= 480) return 18;
+    if (window.innerWidth <= 820) return 28;
+    return 42;
 }
 
 class Particle {
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1; 
+        this.size = Math.random() * 5 + 4; 
         this.speedX = Math.random() * 1 - 0.5; 
         this.speedY = Math.random() * 1 - 0.5; 
-        this.color = 'rgba(255, 255, 255, 0.7)';
+        this.rotation = Math.random() * Math.PI * 2;
+        this.rotationSpeed = Math.random() * 0.02 - 0.01;
+        this.color = 'rgba(255, 185, 218, 0.34)';
     }
 
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
+        this.rotation += this.rotationSpeed;
 
         if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
         if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
     }
 
     draw() {
-        ctx.fillStyle = 'pink';
+        const spikes = 5;
+        const outerRadius = this.size;
+        const innerRadius = this.size * 0.45;
+
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation);
+        ctx.fillStyle = this.color;
+        ctx.shadowColor = 'rgba(255, 185, 218, 0.22)';
+        ctx.shadowBlur = 5;
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        for (let i = 0; i < spikes * 2; i++) {
+            const radius = i % 2 === 0 ? outerRadius : innerRadius;
+            const angle = (Math.PI / spikes) * i - Math.PI / 2;
+            const pointX = Math.cos(angle) * radius;
+            const pointY = Math.sin(angle) * radius;
+
+            if (i === 0) {
+                ctx.moveTo(pointX, pointY);
+            } else {
+                ctx.lineTo(pointX, pointY);
+            }
+        }
+        ctx.closePath();
         ctx.fill();
+        ctx.restore();
     }
 }
 
