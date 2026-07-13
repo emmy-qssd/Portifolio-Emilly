@@ -9,16 +9,14 @@
     --text-dim:      #c4c4c4;
     --text-mute:     #ffffff;
 
-    --accent:        #ad8dd6;   /* mint / terminal green */
-    --accent-2:      #ffffff;   /* cyan */
-    --accent-warm:   #ffb86b;   /* highlight warm */
+    --accent:        #ad8dd6;
+    --accent-2:      #ffffff;
+    --accent-warm:   #ffb86b;
     --danger:        #ff6a6a;
 
-    /* Typography */
     --font-mono: 'JetBrains Mono', ui-monospace, 'Fira Code', Menlo, monospace;
     --font-sans: 'IBM Plex Sans', system-ui, -apple-system, Segoe UI, sans-serif;
 
-    /* Layout */
     --maxw: 1120px;
     --radius: 14px;
     --radius-sm: 8px;
@@ -76,7 +74,6 @@ svg {
     max-width: 100%;
 }
 
-/* Subtle grid + noise background */
 body::before {
     content: \"\";
     position: fixed; inset: 0;
@@ -112,7 +109,6 @@ a { color: inherit; text-decoration: none; }
 }
 .skip-link:focus { left: 0; }
 
-/* ---------- Navbar ---------- */
 .navbar {
     position: sticky;
     top: 0;
@@ -244,7 +240,6 @@ a { color: inherit; text-decoration: none; }
     animation-delay: .28s;
 }
 
-/* Buttons */
 .btn {
     display: inline-flex; align-items: center; gap: 8px;
     font-family: var(--font-mono);
@@ -322,7 +317,6 @@ a { color: inherit; text-decoration: none; }
     margin-left: 2px;
 }
 
-/* ---------- Sections ---------- */
 .section {
     padding: clamp(60px, 9vw, 110px) clamp(20px, 5vw, 64px);
     max-width: var(--maxw);
@@ -352,7 +346,6 @@ a { color: inherit; text-decoration: none; }
     max-width: 300px;
 }
 
-/* ---------- About ---------- */
 .about-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -404,7 +397,6 @@ a { color: inherit; text-decoration: none; }
     animation: pulse 2s var(--ease) infinite;
 }
 
-/* ---------- Habilidades ---------- */
 .habilidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -446,7 +438,6 @@ a { color: inherit; text-decoration: none; }
     color: var(--text-mute);
 }
 
-/* ---------- Projects ---------- */
 .projects-list {
     display: grid;
     gap: 18px;
@@ -679,7 +670,6 @@ a { color: inherit; text-decoration: none; }
     transform: translateY(-50%) scale(1.06);
 }
 
-/* ---------- Contact ---------- */
 .contact-inner {
     max-width: 680px;
 }
@@ -754,7 +744,6 @@ a { color: inherit; text-decoration: none; }
     50%     { box-shadow: 0 0 0 8px rgba(126,231,199,0.04); }
 }
 
-/* ---------- Focus states ---------- */
 a:focus-visible,
 button:focus-visible {
     outline: 2px solid var(--accent);
